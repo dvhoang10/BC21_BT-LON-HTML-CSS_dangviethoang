@@ -1,0 +1,128 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+
+  .show-on-mobile-tablet {
+    display: block;
+  }
+
+  /* header */
+  .header__navbar-list {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    padding-bottom: 20px;
+    z-index: 1;
+    animation: mobileTabletMenuSideIn linear 0.3s;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    display: none;
+  }
+
+  @keyframes mobileTabletMenuSideIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .header__navbar-item {
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* about */
+  .about-right {
+    padding-left: 0;
+  }
+
+  .about-right__img {
+    margin-top: 50px;
+  }
+
+  .mobile-tablet-text-center {
+    text-align: center;
+  }
+
+  .question__content {
+    margin-top: 50px;
+  }
+
+  .testimonial-item__icon {
+    top: -25px;
+    left: -15px;
+  }
+
+  .project__card {
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .project__card-img {
+    margin-bottom: 50px;
+  }
+
+  .project__card-content .btn {
+    margin-bottom: 50px;
+  }
+
+  .project__card-item-on-mobile-tablet {
+    display: block;
+  }
+
+  /* footer */
+  .footer__email {
+    padding-left: 0;
+  }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  .header,
+  .intro__container,
+  .features,
+  .about,
+  .commit__container,
+  .blogs,
+  .demo,
+  .footer,
+  .testimonial__container,
+  .question,
+  .project {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro__container-img {
+    margin-top: 20px;
+  }
+
+  .footer__title,
+  .footer__bottom-text {
+    text-align: center;
+  }
+
+  .footer-item__link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__bottom-social {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .footer-list .footer-item:last-child {
+    margin-bottom: 30px;
+  }
+}
